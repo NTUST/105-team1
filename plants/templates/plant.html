@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>多肉植物分類統計</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style>
+/* 嵌入字型設定 
+    @font-face {
+        font-family: "竹風體";
+        src: url("'css/font/DFChuStd-W4-BIG.ttf'%}");
+    }*/
+    /* 引用嵌入字型 */
+
+  body {
+      
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  th {text-align: center;}
+  .margin {margin-bottom: 45px;}
+
+  .bg {
+      background-color: #474e5d; /* Dark Blue */
+      color: #ffffff;
+  }
+ 
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+
+  </style>
+</head>
+
+	<body>
+		<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">多肉植物分類統計</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/homepage/">首頁</a></li> 
+        <li><a href="/introduce/">簡介</a></li> 
+        <li><a href="/newbie/">新手須知</a></li>  
+        <li><a href="/link/">相關連結</a></li>      
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!--  Container -->
+<div class="container-fluid bg text-center">
+  <a href="/photo/" class="btn btn-default btn-lg">
+    <span class="glyphicon glyphicon-search"></span> photo
+  </a>
+
+<div class="container-fluid">
+	<div class="table-responsive" >   
+ 	 	<table class="table ">
+ 	 		<tr>
+	 	 		<th>科別</th>
+	 	 		<th>名稱</th>
+	 	 	</tr>
+			{% for kind in kinds %}
+			<tr>
+				<th>{{kind.name}}  (共 {{ kind.plant_set.all|length }} 種)</th>
+				<th> 
+				{% for plant in kind.plant_set.all %}				
+				{{plant.name}} 、 				
+				{% endfor%}
+				</th>
+			</tr>
+			{% endfor%}
+		</table>
+</div>
+
+
+</body>
+</html>

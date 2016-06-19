@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>其他連結</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style>
+      body {
+        background-image: url("image/background.jpg"); 
+        background-size: cover;   
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+
+    }
+    ul#menu {
+        padding: 0;
+        content: 100;
+
+    }
+    /*選單設定*/
+     ul { /* 取消ul預設的內縮及樣式 */ 
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          
+      }
+
+      ul.drop-down-menu {
+          display: inline-block;
+          font-family: "竹風體";
+          font-size: 30px;
+      }
+
+      ul.drop-down-menu li {
+          position: relative;
+          white-space: nowrap;               
+      }
+
+      ul.drop-down-menu > li:last-child {
+          border-right: none;
+      }
+
+      ul.drop-down-menu > li {
+          float: left; /* 只有第一層是靠左對齊*/
+      }  
+      
+       ul.drop-down-menu a {
+          background-color: transparent;
+          color: white;
+          display: block;
+          padding: 0 30px;
+          text-decoration: none;
+          line-height: 40px;
+          
+      }
+      ul.drop-down-menu a:hover { /* 滑鼠滑入按鈕變色*/
+          background-color:blue; /*#e7e7e7*/
+          color: black;
+      }
+      ul.drop-down-menu li:hover > a { /* 滑鼠移入次選單上層按鈕保持變色*/
+          background-color: rgba(60%,60%,60%,0.7);
+          color: black;
+      }
+      ul.drop-down-menu ul {
+          border: white 1px solid;
+          position: absolute;
+          z-index: 99;
+          left: -1px;
+          top: 100%;
+         min-width: 100px;
+      }
+
+      ul.drop-down-menu ul li {
+          border-bottom: white 1px solid;
+      }
+
+      ul.drop-down-menu ul li:last-child {
+          border-bottom: none;
+      }
+
+        ul.drop-down-menu ul { /*隱藏次選單*/
+          display: none;
+      } 
+
+      ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
+          display: block;
+      }
+
+
+    /* 嵌入字型設定 */
+    @font-face {
+        font-family: "竹風體";
+        src: url('DFChuStd-W4-BIG.ttf');
+    }
+    /* 引用嵌入字型 */
+    .embFont01 {
+        font-family: "竹風體";
+        font-size: 36px;
+        color:black;
+    }
+    .embFont02 {
+        font-family: "竹風體";
+        font-size: 24px;
+        color:black;
+    }
+    /*BOTTON*/
+    .botton {
+        font-family: "竹風體";
+        font-size: 20px;
+        color:white;
+        background-color: transparent;
+        width:160px;height:50px;        
+
+    }
+    .button1:hover {background-color: #e7e7e7;color: black;}
+    div { font-family: "竹風體", serif; font-size: 30px;}
+  </style>
+
+</head>
+<body>
+
+<div><img src="image/upper3.png"  ></div> 
+
+<div class="container"> 
+  <div style="top:25%;left:23%;position:absolute;">  
+  <ul class="drop-down-menu">
+        <li><a href="homepage.html">首頁</a></li>
+        <li><a href="introduce.html">簡介</a></li>
+        <li><a href="newbie.html">新手須知</a>
+        <ul>
+              <li><a href="buy.html">選購</a>
+              </li>
+              <li><a href="繁殖.html">繁殖</a>
+              </li>
+              <li><a href="sun.html">日照與澆水</a>
+              </li>
+              <li><a href="soil.html">土壤</a>
+              </li>
+          </ul>
+        </li>
+        <li><a href="photo.html">圖鑑</a></li>
+        <li><a href="link.html">其他連結</a></li>       
+  </ul>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-1">  </div>
+    <div class="col-sm-6">  
+    <br><h2><b> 相關網站 </b></h2><br>   
+
+      <dl>
+        <dt><a href="introduce.html"> ++ 鐵花棧町</a></dt>
+        <dt><a href="default.asp"> ++ Saturdays星期六多肉植物 </a></dt>    
+        <dt><a href="default.asp"> ++ 蘭花草</a></dt>
+        <dt><a href="default.asp"> ++ 一百種常見多肉植物圖鑑 </a></dt>
+      </dl>
+  
+    </div>
+
+    <div class="col-sm-5">
+
+    <div class="slider_container">
+        <div><img src="image/新手須知-右邊圖2.png" alt="pure css3 slider"></div>       
+    </div>  
+
+    </div>
+ </div>
+</div>  
+
+</div>  
+<img src="image/下灰底2.png" >
+</div>
+
+
+</body>
+</html>

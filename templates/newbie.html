@@ -1,0 +1,225 @@
+<!DOCTYPE HTML>
+<!--
+	Synchronous by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+{% load staticfiles %}
+<html>
+	<head>
+		<title>新手須知</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" href="{% static 'css/style-desktop.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/style.css' %}" >
+
+
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+
+		<script src="{% static 'js/skel.min.js' %}"></script>
+		<script src="{% static 'js/skel-panels.min.js' %}"></script>
+		<script src="{% static 'js/init.js' %}"></script>		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>	
+
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+	<style>
+	#header
+	{
+		position: relative;
+		margin-bottom: 1em 0em;
+		text-align: center;
+		background: url({% static 'images/upper-w.png' %}) no-repeat center;
+		background-size: auto;
+	}
+	#page {
+		padding: 3em 0em;
+		background: url({% static 'images/background.jpg' %});   
+	    background-size: cover;
+	}
+	#page2 {
+		padding: 0em 0em;
+		background: url({% static 'images/background.jpg' %});   
+	    background-size: cover;
+	}
+
+	#content header
+	{
+		margin-bottom: 2em !important;
+	}
+
+	#content header h2
+	{
+		line-height: 1.2em;
+		font-size: 3em;
+	}
+
+	#content
+	{
+	}
+	
+	#footer
+	{
+		color:white;
+	    clear:both;
+	    text-align:center;	   
+		padding: 0.7em 0em;
+	}
+
+/*********************************************************************************/
+/* Nav                                                                           */
+/*********************************************************************************/
+
+	#nav
+	{
+		font-family: "竹風體";
+	}
+
+		#nav > ul > li
+		{
+			display: inline-block;
+		}
+		
+			#nav > ul > li:last-child
+			{
+				padding-right: 0;
+
+			}
+
+			#nav > ul > li > a,
+			#nav > ul > li > span
+			{
+				display: block;
+				padding: 0.4em 2em;
+				letter-spacing: 1px;
+				text-decoration: none;
+				text-transform: uppercase;
+				font-weight: 200;
+				font-size: 24px ;
+				outline: 0;
+				color: white;				
+			}
+
+
+			#nav > ul > li > a:hover
+			{
+				color:#323338;
+	        	background-color: #e7e7e7;
+				
+			}
+
+			#nav li.active a
+			{
+				background: transparent;
+				border-radius: 4px;
+				color: #FFF;
+			}
+
+			#nav > ul > li > ul
+			{
+				display: none;								
+
+			}
+			.nav-tabs li a {
+				font-size: 24px;
+				color: black;
+			}
+
+			/* 引用嵌入字型 */
+			.embFont01 {
+			    font-size: 28px;
+			    color:black;
+			}
+			.embFont02 {
+			    font-size: 24px;
+			    color:black;
+			}
+		</style>
+
+	</head>
+	<body class="homepage">
+		<div id="wrapper">
+			
+			<!-- Header -->
+			<div id="header">
+				<div class="container">
+					<!-- Nav -->
+					<nav id="nav" >
+						<ul style = "margin-top:220px" class="drop-down-menu">
+					        <li><a href="/homepage/">首頁</a></li>
+					        <li><a href="/introduce/">簡介</a></li>
+					        <li><a href="/newbie/">新手須知</a></li>
+					        <li><a href="/photo/">圖鑑</a></li>
+					        <li><a href="/link/">其他連結</a></li>       
+						</ul>
+						
+					</nav>
+				</div>
+			</div>
+			<!-- /Header -->
+			
+			<div id="page" >
+				<div class="container" style="font-family: 竹風體 ">	
+					  <ul class=" nav nav-tabs" >
+					    <li class="active" ><a data-toggle="tab" href="#home">選購</a></li>
+					    <li><a data-toggle="tab" href="#menu1" >繁殖</a></li>
+					    <li><a data-toggle="tab" href="#menu2">日照與澆水</a></li>
+					    <li><a data-toggle="tab" href="#menu3">土壤</a></li>
+					  </ul>
+
+					  <div class="tab-content" style="padding:2em 5em">
+					    <div id="home" class="tab-pane fade in active">
+					      
+					      <h3 class="embFont02"><b>1. 判斷是否徒長？</b></h3></br>
+							<p class="embFont02">				
+							通常花農所生產的多肉植物都是健康的，會徒長多是在零售處發生。很多店家，將多肉植物擺放在室內或遮陽棚下，因為光線不足，隨著販售時間愈久，植株徒長的現象會更嚴重，建議避免購買。
+							</p></br>
+							<h3 class="embFont02"><b>2. 品種特徵要明顯</b></h3></br>
+							<p class="embFont02">				
+							大部分的多肉植物都可以舉出她的觀賞重點，有些種類還發展出「型」與「個體」出來，這些外觀上微妙的變化，可以更增進觀賞價值。例如景天科的黑法師與黑王子，都是具有葉色深黑的特色，選購時儘量挑葉色深的買。
+							</p></br>
+							<h3 class="embFont02"><b>3. 單株、多株或多芽？</b></h3></br>
+							<p class="embFont02">				
+							生產多肉植物的農民，使用不同的繁殖材料與栽培方法，也常生產出同一種多肉植物但有品相差異很大的情形。例如照片中的千兔耳，單株與多株的價格相同，但你會買哪一盆？其實端看個人的喜好。單株的株形端正，植株健康飽滿；多株的植株較小，但如喜歡多肉的豐盛感或想拆開來另外種植的人，應該會想選這盆。
+							</p>
+					    </div>
+					    <div id="menu1" class="tab-pane fade">					      
+					     	<div><img src="/static/images/multiplication/繁殖圖文.png" ></div>
+	  						<img src="/static/images/multiplication/繁殖圖文2.png" >
+					    </div>
+					    <div id="menu2" class="tab-pane fade"> 
+					    <p class="text-center embFont02"><b>多肉植物需要多少陽光呢？</b></p></br>
+					    <p class="embFont02">				
+						大部分的多肉植物都適合種植於陽光直射的位置，陽光愈強，植株型態愈緊實，植株獨具的色彩如葉色、紋路會更鮮明，例如女雛。部分種類，在接受半日照的環境，亦即陽光沒有直接照射到植株上，但非常明亮的位置，仍能正常生長。不過植株外觀上會有些許變化，例如景天科的唐印，在接受陽光直射的位置種植，葉片豎直且葉緣會呈現美觀的紅暈，在冬季低溫期更會整片泛紅；但如果將她種植在半日照處，則葉色粉綠，冬季才會略呈紅色，葉片型態上則是斜伸或平展，如果光線更差，葉片則是呈現萎軟下垂的無力感。
+						</p></br>
+						<p class="text-center embFont02"><b>多肉植物是需要澆水的喔！</b></p></br>
+						<p class=" embFont02">				
+						乾燥地區是多肉植物生長的故鄉，為了在乾燥環境中生存，其莖葉已演化為具有儲存水分的功能。因此，即便澆水量少，多肉植物依然可以茁壯生長，有些多肉植物甚至完全不需要澆水仍可存活數年。
+						其莖葉除了儲存水分的功能外，亦具備防止水分流失的功能。一般植物會從植物葉背上的氣孔排出水分，然而多肉植物在白天艷陽下，會關閉氣孔防止水分喪失，待夜晚溫度降低後，再開放氣孔吸收二氧化碳，合成有機酸中之蘋果酸。
+						在台灣種植多肉植物，若是非常通風的環境，一週澆一次水沒有問題，若是環境比較不通風，澆水頻率兩週一次，在生長季時的多肉植物可以將水澆到透（水從底部孔洞透水出來），若是休眠期水分則減少一半至三分之一。
+						</p>
+					    </div>	
+					    <div id="menu3" class="tab-pane fade">					      
+					     	<img src="/static/images/soil/土壤文字-1-1.png" width="1200px" height="600px">
+	  						
+					    </div>
+					  </div>	
+					
+				</div>	
+			</div>
+
+			<!-- Footer -->
+
+			<div id="footer">
+			From Wikipedia
+			</div>
+
+			
+		</div>
+	</body>
+</html>
